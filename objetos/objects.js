@@ -15,9 +15,18 @@
         name: 'Bruce Wayne',
         age: 48,
         powers: ['Super Traje'],
-        // getNombre() {
-        //     return this.name;
-        // }
+        getName() {
+            return this.name;
+        }
     };
     console.log(batman);
+    let thor = {
+        name: 'Thor Odinson',
+        age: 35,
+        powers: ['Super Fuerza', 'Rayos', 'Milholdir'],
+        getName() {
+            return this.name;
+        }
+    };
+    console.log(thor);
 })();

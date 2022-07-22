@@ -14,14 +14,25 @@
 
     console.log({ flash });
 
-    let batman: { name: string, age?: number, powers: string[] } = {
+    let batman: { name: string, age?: number, powers: string[], getName?: () => string } = {
         name: 'Bruce Wayne',
         age: 48, 
         powers: ['Super Traje'],
-        // getNombre() {
-        //     return this.name;
-        // }
+        getName() {
+            return this.name;
+        }
     }
 
     console.log( batman );
+
+    let thor: { name: string, age?: number, powers: string[], getName?: () => string } = {
+        name: 'Thor Odinson',
+        age: 35, 
+        powers: ['Super Fuerza', 'Rayos', 'Milholdir'],
+        getName() {
+            return this.name;
+        }
+    }
+
+    console.log( thor );
 })();
