@@ -13,4 +13,15 @@
     }
 
     console.log({ flash });
+
+    let batman: { name: string, age?: number, powers: string[] } = {
+        name: 'Bruce Wayne',
+        age: 48, 
+        powers: ['Super Traje'],
+        // getNombre() {
+        //     return this.name;
+        // }
+    }
+
+    console.log( batman );
 })();
